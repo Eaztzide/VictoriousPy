@@ -5,18 +5,18 @@ import pyperclip, re, os
 #If it matches the ones stored in a plaintext file, it's a go-ahead.
 
 phone9jaRegex = re.compile(r'''(
-    (\+)?                            # the plus sign which is only present if there's a 234 
-    (234|0)                       # the country code which can be optional if thers's a staring '0'
-    (\d\d\d)                      # the network prefix         
-    (\d\d\d\d\d\d\d)        # the last 6 digits
+    (\+)?                           # the plus sign which is only present if there's a 234 
+    (234|0)                         # the country code which can be optional if thers's a staring '0'
+    (\d\d\d)                        # the network prefix         
+    (\d\d\d\d\d\d\d)                # the last 6 digits
     )''', re.VERBOSE)                   
 
 #This regex checks for any potential email address by looking for parameters like
 #username, @ symbol, domain name, and domain (examples cited at line 20 (groups[4] comment))
 emailRegex = re.compile(r'''(
     [a-zA-Z0-9._%+-]+       # username
-    @                               # @ symbol
-    [a-zA-Z0-9.-]+           # domain-name
+    @                       # @ symbol
+    [a-zA-Z0-9.-]+          # domain-name
     (\.[a-zA-Z]{2,4})       # domain (e.g. .com, .org, .mail, .etc)
     )''', re.VERBOSE)       
 
