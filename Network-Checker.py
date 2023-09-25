@@ -16,7 +16,7 @@ Zoom = ('707')
 AllNigNet = (N9Mobile, Airtel, Glo, MTN, Multilinks, Ntel, Smile, Starcomms, Zoom)
 try:
     while True:
-            print('\nEnter your Nigerian number without country code:')
+            print('\nEnter your Nigerian number without the country code:')
             Number = str(int(input()))
 
     #A module to  make sure the number typed is = 10
