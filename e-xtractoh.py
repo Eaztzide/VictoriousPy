@@ -1,5 +1,7 @@
 import pyperclip, re, os
 
+#Dependency: pyperclip3==0.4.1
+
 #The aim of this code is to extract email addresses and Nigerian MOBILE phone numbers
 #The extractor validates if it has come across a Nigerian number by checking the network prefix
 #If it matches the ones stored in a plaintext file, it's a go-ahead.
